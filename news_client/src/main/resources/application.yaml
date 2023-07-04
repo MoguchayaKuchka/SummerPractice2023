@@ -1,0 +1,4 @@
+app:
+  newsSources:
+    - NEWS_SOURCE_ONE
+    - NEWS_SOURCE_TWO
