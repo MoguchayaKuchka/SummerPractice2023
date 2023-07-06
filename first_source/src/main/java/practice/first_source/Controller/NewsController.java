@@ -1,10 +1,13 @@
 package practice.first_source.Controller;
 
-import lombok.*;
-import org.springframework.beans.factory.annotation.*;
-import org.springframework.web.bind.annotation.*;
-import practice.first_source.DTO.*;
-import practice.first_source.Service.*;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import practice.first_source.DTO.NewsResponse;
+import practice.first_source.Service.NewsService;
 
 @RestController
 @RequestMapping("/news")

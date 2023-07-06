@@ -1,8 +1,6 @@
 package practice.client.Util;
 
-import org.springframework.web.client.*;
-
-import java.util.*;
+import org.springframework.web.client.RestTemplate;
 
 public class RestUtil {
     static final RestTemplate restTemplate = new RestTemplate();

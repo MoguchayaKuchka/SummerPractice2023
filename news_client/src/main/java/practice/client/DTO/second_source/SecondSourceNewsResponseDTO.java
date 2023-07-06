@@ -1,8 +1,10 @@
 package practice.client.DTO.second_source;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.*;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor

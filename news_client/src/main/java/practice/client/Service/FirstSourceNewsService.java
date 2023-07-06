@@ -1,11 +1,11 @@
 package practice.client.Service;
 
-import org.springframework.stereotype.*;
-import practice.client.DTO.*;
-import practice.client.DTO.first_source.*;
-import practice.client.Interfaces.*;
-import practice.client.Util.*;
-import practice.client.Util.mapper.*;
+import org.springframework.stereotype.Service;
+import practice.client.DTO.NewsDTO;
+import practice.client.DTO.first_source.FirstSourceNewsResponseDTO;
+import practice.client.Interfaces.NewsSource;
+import practice.client.Util.RestUtil;
+import practice.client.Util.mapper.FirstSourceMapper;
 
 import java.util.*;
 
@@ -32,5 +32,10 @@ public class FirstSourceNewsService implements NewsSource {
             return Collections.emptyList();
 
         return FirstSourceMapper.mapResponse(resp);
+    }
+
+    @Override
+    public String getMnemonic(){
+        return "NEWS_SOURCE_ONE";
     }
 }

@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import practice.second_source.DTO.NewsDTO;
 import practice.second_source.Repository.NewsRepo;
-import practice.second_source.Util.*;
+import practice.second_source.Util.DateUtil;
 
-import java.util.*;
+import java.util.List;
 
 @Service
 public class NewsService {

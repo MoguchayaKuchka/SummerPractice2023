@@ -6,7 +6,7 @@ import practice.first_source.DTO.NewsDTO;
 import practice.first_source.Repository.NewsRepo;
 import practice.first_source.Util.DateUtil;
 
-import java.util.*;
+import java.util.List;
 
 @Service
 public class NewsService {

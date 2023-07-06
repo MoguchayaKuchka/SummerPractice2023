@@ -1,13 +1,13 @@
 package practice.client.DTO;
 
-import lombok.*;
-import org.springframework.cglib.core.*;
+import lombok.Builder;
+import lombok.Data;;
 
-import java.time.*;
+import java.time.LocalDate;
 
 @Data
 @Builder
-public class NewsDTO {
+public class NewsDTO implements Comparable<NewsDTO>{
 
     private final String heading;
 
@@ -16,4 +16,9 @@ public class NewsDTO {
     private String url;
 
     private LocalDate date;
+
+    @Override
+    public int compareTo(NewsDTO o) {
+        return o.getDate().compareTo(date);
+    }
 }

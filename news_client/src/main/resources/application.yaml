@@ -2,3 +2,11 @@ app:
   newsSources:
     - NEWS_SOURCE_ONE
     - NEWS_SOURCE_TWO
+#Необходимые параметры, в клиенте бд нет, поэтому пихнул одну из баз апи
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/NewsDB2
+    username: postgres
+    password: sandwich
+server:
+  port: 8080

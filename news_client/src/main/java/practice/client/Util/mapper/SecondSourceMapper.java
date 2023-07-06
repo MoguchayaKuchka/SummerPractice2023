@@ -1,10 +1,12 @@
 package practice.client.Util.mapper;
 
-import practice.client.DTO.*;
-import practice.client.DTO.second_source.*;
-import practice.client.Util.*;
+import practice.client.DTO.NewsDTO;
+import practice.client.DTO.second_source.SecondSourceNewsDTO;
+import practice.client.DTO.second_source.SecondSourceNewsResponseDTO;
+import practice.client.Util.DateUtil;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SecondSourceMapper {
     public static List<NewsDTO> mapResponse(SecondSourceNewsResponseDTO resp){

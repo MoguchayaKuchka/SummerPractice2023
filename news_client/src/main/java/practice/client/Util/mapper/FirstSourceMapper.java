@@ -1,11 +1,12 @@
 package practice.client.Util.mapper;
 
-import practice.client.DTO.*;
-import practice.client.DTO.first_source.*;
-import practice.client.Interfaces.*;
-import practice.client.Util.*;
+import practice.client.DTO.NewsDTO;
+import practice.client.DTO.first_source.FirstSourceNewsDTO;
+import practice.client.DTO.first_source.FirstSourceNewsResponseDTO;
+import practice.client.Util.DateUtil;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FirstSourceMapper {
     public static List<NewsDTO> mapResponse(FirstSourceNewsResponseDTO resp){
